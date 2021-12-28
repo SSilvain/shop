@@ -1,16 +1,74 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page ">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"Главная" })
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page__home">
+			<section class="page__main-block main-block">
+				<div class="main-block__container">
+					<div class="main-block__body">
+						<div class="main-block__slider">
+							<div class="main-block__swiper">
+								<div class="main-block__slide slide-main-block">
+									<div class="slide-main-block__content">
+										<h2 class="slide-main-block__title">Интернет магазин сертефицированных</h2>
+										<div class="slide-main-block__sub-title">златоустовских ножей</div>
+										<div class="slide-main-block__text">
+											 Каталог сайта содержит широкий ассортимент удобных и привлекательных моделей от босоножек до туфель на каблуке.
+										</div>
+										<a href="#" class="slide-main-block__button button">Подробнее</a>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-block__media media-main-block">
+							<div class="media-main-block__image">
+								<img src="@img/mainblock/image.jpg" alt="Картинка в слайдере">
+							</div>
+							<div class="media-main-block__tips">
+								<div data-tippy-content="Подсказка" class="media-main-block__tips_1">+</div>
+								<div data-tippy-content="Подсказка" class="media-main-block__tips_2">+</div>
+								<div data-tippy-content="Подсказка" class="media-main-block__tips_3">+</div>
+							</div>
+						</div>
+					</div>
+					<div class="main-block__adventages adventages-main">
+						<div class="adventages-main__item">
+							<div class="adventages-main__icon">
+								<img src="@img/icons/adv-1.svg" alt="Преимущества">
+							</div>
+							<div class="adventages-main__text">Бронирование в ближайшем магазине</div>
+						</div>
+						<div class="adventages-main__item">
+							<div class="adventages-main__icon">
+								<img src="@img/mainblock/adv-3.svg" alt="Преимущества">
+							</div>
+							<div class="adventages-main__text">Бронирование в ближайшем магазине</div>
+						</div>
+						<div class="adventages-main__item">
+							<div class="adventages-main__icon">
+								<img src="@img/mainblock/adv-3.svg" alt="Преимущества">
+							</div>
+							<div class="adventages-main__text">Бронирование в ближайшем магазине</div>
+						</div>
+						<div class="adventages-main__item">
+							<div class="adventages-main__icon">
+								<img src="@img/mainblock/adv-4.svg" alt="Преимущества">
+							</div>
+							<div class="adventages-main__text">Бронирование в ближайшем магазине</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
 </html>

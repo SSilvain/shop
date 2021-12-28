@@ -1,24 +1,32 @@
 <header class="header">
 	<div class="header__top top-header">
 		<div class="top-header__container">
-			<div class="top-header__menu menu">
-				<nav class="menu__body">
-					<ul class="menu__list">
-						<li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">Оплата и доставка</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
-						<li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
-					</ul>
-				</nav>
-			</div>
+			<nav class="top-header__menu menu-top-header">
+				<ul data-da=".menu__body, 991.98" class="menu-top-header__list">
+					<li class="menu-top-header__item menu-top-header__item_catalog"><a
+							class="menu-top-header__link menu-top-header__link_catalog _icon-arrow-bottom"
+							href="#">Каталог товаров</a></li>
+					<li class="menu-top-header__item"><a class="menu-top-header__link" href="#">О нас</a></li>
+					<li class="menu-top-header__item"><a class="menu-top-header__link" href="#">Оплата и доставка</a>
+					</li>
+					<li class="menu-top-header__item"><a class="menu-top-header__link" href="#">Новости</a></li>
+					<li class="menu-top-header__item"><a class="menu-top-header__link" href="#">Контакты</a></li>
+				</ul>
+			</nav>
+
 			<a class="top-header__user _icon-user" href="#"><span>Личный кабинет</span></a>
-			<button type="button" class="icon-menu"><span></span></button>
+			<nav hidden class="menu">
+				<button type="button" class="menu-icon icon-menu"><span></span></button>
+				<div class="menu__body">
+
+				</div>
+			</nav>
 		</div>
 	</div>
 	<div class="header__body body-header">
 		<div class="body-header__container">
 			<a href="#" class="body-header__logo"></a>
-			<div class="body-header__search">
+			<div data-da=".catalog-header__container,479.98" class="body-header__search">
 				<form action="#" class="search-header">
 					<button type="submit" class="search-header__button _icon-search"></button>
 					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Поиск"
@@ -27,11 +35,11 @@
 			</div>
 			<div class="body-header__actions actions-header">
 				<a href="#" class="actions-header__location _icon-location"><span>Москва</span></a>
-				<div class="actions-header__phones phones-header">
+				<div data-da=".top-header__container,991.98,first" class="actions-header__phones phones-header">
 
 					<div data-spollers class="phones-header__item">
 						<div class="phones-header__item">
-							<a href="tel:880030043320" class="phones-header__phone">8-800-300-43-32-0</a>
+							<a href="tel:880030043320" class="phones-header__phone"><span>8-800-300-43-32</span></a>
 							<button type="button" data-spoller class="phones-header__arrow _icon-arrow-bottom"></button>
 							<ul class="phones-header__list">
 								<li><a href="tel:880030043321" class="phones-header__phone">8-800-300-43-32-1</a></li>
@@ -44,20 +52,22 @@
 					<button type="button" data-popup="#callback" class="phones-header__callback">Заказать
 						звонок</button>
 				</div>
-				<a href="" class="actions-header__favorite _icon-favorite"></a>
-				<div class="actions-header__cart cart-header">
+				<a href="" data-da=".top-header__container,991.98,2"
+					class="actions-header__favorite _icon-favorite"></a>
+				<a href="#" data-da=".top-header__container,991.98,2" class="actions-header__cart cart-header">
 					<div class="cart-header__icon _icon-cart"><span>13</span></div>
 					<div class="cart-header__body">
 						<div class="cart-header__summ">0 р.</div>
-						<a href="" class="cart-header__link">Оформить заказ</a>
+						<div class="cart-header__link">Оформить заказ</div>
 					</div>
-				</div>
+				</a>
 			</div>
 		</div>
 	</div>
 	<div class="header__catalog catalog-header">
 		<div class="catalog-header__container">
 			<nav class="catalog-header__menu menu-catalog">
+				<button type="button" class="menu-catalog__back _icon-arrow-back">Назад</button>
 				<ul class="menu-catalog__list">
 					<li class="menu-catalog__item"><button data-parent="1" class="menu-catalog__link">Каталог
 							ножей</button></li>
@@ -72,6 +82,7 @@
 
 				</ul>
 				<div class="menu-catalog__sub-menu sub-menu-catalog">
+					<button type="button" class="sub-menu-catalog__back _icon-arrow-back">Назад</button>
 					<div class="sub-menu-catalog__container">
 						<div hidden data-submenu="1" class="sub-menu-catalog__block">
 							<div class="sub-menu-catalog__category">
@@ -87,8 +98,7 @@
 										class="sub-menu-catalog__link">Туристические ножи</a></li>
 								<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Ножи
 										охотничьи</a></li>
-								<li class="sub-menu-catalog__item"><a href="#"
-										class="sub-menu-catalog__link">Булатные
+								<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Булатные
 										ножи</a></li>
 								<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Ножи
 										из
@@ -111,8 +121,7 @@
 										class="sub-menu-catalog__link">Туристические ножи</a></li>
 								<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Ножи
 										охотничьи</a></li>
-								<li class="sub-menu-catalog__item"><a href="#"
-										class="sub-menu-catalog__link">Булатные
+								<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Булатные
 										ножи</a></li>
 								<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Ножи
 										из
@@ -152,8 +161,7 @@
 										class="sub-menu-catalog__link">Туристические ножи</a></li>
 								<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Ножи
 										охотничьи</a></li>
-								<li class="sub-menu-catalog__item"><a href="#"
-										class="sub-menu-catalog__link">Булатные
+								<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Булатные
 										ножи</a></li>
 								<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Ножи
 										из
@@ -176,8 +184,7 @@
 										class="sub-menu-catalog__link">Туристические ножи</a></li>
 								<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Ножи
 										охотничьи</a></li>
-								<li class="sub-menu-catalog__item"><a href="#"
-										class="sub-menu-catalog__link">Булатные
+								<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Булатные
 										ножи</a></li>
 								<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Ножи
 										из
@@ -200,8 +207,7 @@
 										class="sub-menu-catalog__link">Туристические ножи</a></li>
 								<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Ножи
 										охотничьи</a></li>
-								<li class="sub-menu-catalog__item"><a href="#"
-										class="sub-menu-catalog__link">Булатные
+								<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Булатные
 										ножи</a></li>
 								<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Ножи
 										из
@@ -359,72 +365,3 @@
 		</div>
 	</div>
 </header>
-<div class="tmp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, rem harum. Laudantium molestiae numquam
-	dolore sint, a ad perspiciatis ut quis vitae molestias rem placeat fugit magnam nam accusantium voluptate ipsam
-	provident ipsa excepturi alias neque? Deserunt suscipit natus soluta earum culpa tenetur nulla sed, id eos
-	exercitationem quis in autem, ducimus nihil, modi quidem. Dolorem sit quae velit illo ea facilis incidunt numquam
-	atque debitis, animi qui laudantium officia accusamus vitae molestiae deleniti eaque expedita nemo magnam voluptas
-	rem impedit dignissimos delectus officiis? Quis delectus ut at quibusdam optio doloribus quasi rem, culpa
-	repudiandae ipsum aliquid dolore accusantium eaque! Labore ipsam voluptatum laudantium itaque quae velit assumenda
-	eum, aspernatur quibusdam ullam nihil laborum, harum at fugiat quisquam deserunt aut excepturi eligendi sunt saepe,
-	modi error magnam? Doloremque porro consectetur cum eum ipsa laudantium asperiores tenetur assumenda illum fuga
-	voluptatibus perferendis dignissimos dicta libero obcaecati expedita amet, nisi autem tempore nam totam natus
-	aspernatur vitae. Dolore mollitia est exercitationem suscipit deserunt perferendis quos libero sequi hic. Tempora
-	harum excepturi error id distinctio itaque inventore rerum, esse laborum cumque eveniet provident! Corrupti nemo
-	nesciunt harum provident veritatis ex saepe impedit nostrum autem dolorum enim nam sed reprehenderit similique quis,
-	aspernatur vero deleniti delectus. Officia non numquam asperiores iste minus atque veritatis obcaecati facere magnam
-	similique blanditiis, quas quam consequuntur quisquam quasi magni id libero animi! Reiciendis dolor sunt esse sit.
-	Optio quae nihil, error vero suscipit explicabo. Necessitatibus, porro similique. Libero beatae animi id voluptates
-	officia in praesentium temporibus, amet adipisci omnis quis sit saepe quasi exercitationem eius. Id, harum
-	similique? Consequatur, illum sed aliquam consectetur at ipsam exercitationem, deserunt est, necessitatibus cumque
-	voluptatem fugiat neque eveniet dolorum incidunt ullam modi placeat nulla facere explicabo reprehenderit molestias.
-	Dolorem odit accusamus modi, explicabo, officia earum iure odio nemo sunt cum fugit nam nulla maxime laudantium
-	officiis repellendus pariatur, quisquam ea distinctio molestiae a placeat. Sit molestias blanditiis ipsa placeat,
-	cum iure ducimus odio qui eum dignissimos nihil cupiditate asperiores, sequi temporibus harum vitae, debitis fugiat
-	perspiciatis deserunt. Nulla, exercitationem officiis eaque, ratione numquam eius libero sit accusamus veritatis
-	dolorum esse. Fuga dolor velit sint consequatur nihil suscipit vel enim perferendis delectus tempore necessitatibus
-	quidem dignissimos sequi laudantium voluptas, quia optio soluta quibusdam porro voluptatibus atque veritatis. Ipsa
-	ab consequuntur illo, qui tenetur repudiandae recusandae ut sint, officiis architecto laboriosam quod, quis
-	perferendis magnam culpa ex repellendus? Nemo ratione ut corrupti nobis, architecto excepturi adipisci! Ullam
-	impedit ex esse rerum sit consequatur quaerat libero, doloremque dolorem exercitationem, quo illum! Rerum nam
-	aliquam itaque! Fugit numquam magni at accusamus veritatis nihil, sed distinctio sunt illo dignissimos non fuga qui
-	asperiores molestias perspiciatis autem quod expedita reprehenderit molestiae quaerat labore odit eligendi! Illo
-	inventore vitae numquam, tempora repellendus repudiandae id officia distinctio. Itaque accusamus quaerat pariatur
-	reprehenderit debitis nobis dolore, aliquam blanditiis officia accusantium? Enim, hic fugit temporibus, tempora
-	facere id consectetur voluptatum recusandae impedit a corrupti repellendus tenetur consequatur aliquam. Debitis
-	tenetur repudiandae sapiente non culpa labore aliquid obcaecati saepe dolorem odio sint, ex nobis reiciendis
-	voluptatum in praesentium. Id quam culpa aliquid aliquam laborum dicta nobis iusto voluptatibus quas quasi vitae
-	ullam, ipsum blanditiis cumque quos, optio itaque. Cumque excepturi incidunt, sit corrupti, ipsum quo, repellendus
-	molestiae similique debitis maiores odit vero! Magnam, repellendus quaerat. Optio suscipit perspiciatis, facere odit
-	deserunt mollitia sit illo sunt voluptatum iusto blanditiis ipsa praesentium saepe laudantium minus. Et excepturi
-	libero porro neque accusamus dolor quas placeat harum ut est veniam rerum in similique cumque delectus, nemo cum
-	quibusdam ducimus natus culpa voluptatem recusandae iure incidunt laborum. Commodi non mollitia praesentium ex
-	perferendis deserunt, fugiat ducimus, laborum animi tenetur, modi recusandae odio possimus aut ad. Voluptatem,
-	pariatur. Quidem, saepe? Beatae modi voluptas exercitationem ab rerum voluptatibus repellendus neque optio officia
-	architecto, fugiat ut dignissimos eveniet esse harum laudantium quia corporis vel reiciendis ratione et ad
-	voluptate! Expedita beatae eveniet sapiente numquam eos excepturi dolore alias repellat. Similique temporibus ipsa
-	illum et reiciendis, tempore exercitationem excepturi necessitatibus. Eligendi provident veniam quos at corporis!
-	Dolores, eaque? Beatae doloribus optio deserunt blanditiis saepe sapiente doloremque fuga? Similique pariatur, porro
-	eos voluptate dolorem ab nobis quia architecto repudiandae optio magni asperiores ratione enim repellat temporibus
-	aspernatur, consectetur veritatis tempore doloremque libero ut! A quae molestiae quasi vel deserunt, quas incidunt
-	eos! Pariatur qui distinctio consequuntur. Repellendus, qui vitae. Ipsa vero obcaecati eum voluptate reiciendis
-	beatae autem? Consectetur ab accusamus velit libero voluptate accusantium debitis nemo expedita, eligendi
-	praesentium quisquam quaerat aperiam voluptas, corporis similique rerum necessitatibus adipisci facere deleniti nisi
-	illum. Dolorum blanditiis adipisci ducimus voluptas est quis, veniam a id aspernatur? Voluptas illum placeat hic,
-	sequi illo sint obcaecati mollitia iste voluptatum veritatis? Facere quo perferendis, quisquam et, animi voluptatem
-	similique ex dolores obcaecati placeat laudantium itaque commodi deserunt officia hic. Possimus molestias, deleniti
-	nostrum laudantium eligendi placeat vitae saepe minus odit cupiditate atque architecto a doloremque optio beatae
-	laborum, cumque voluptatibus eos, non praesentium explicabo rerum sed. Omnis aliquam quasi numquam fuga eos libero
-	non, explicabo officiis cum laboriosam doloremque harum, placeat repudiandae minus, mollitia perferendis? Quia
-	laboriosam pariatur veritatis asperiores possimus, accusamus consequuntur perspiciatis dolores aliquam! Aliquid
-	veritatis deserunt provident dolore quas, nisi nostrum maiores, ab fugiat modi officia dignissimos atque repellat
-	inventore laboriosam ipsum corrupti, exercitationem in quae. Debitis hic ipsum, eveniet obcaecati blanditiis nihil
-	atque assumenda soluta aliquid aliquam sint? Enim, nemo inventore doloremque est a necessitatibus labore mollitia
-	quis aut rerum amet quae odio praesentium et aliquam error consequatur id itaque ratione consequuntur repellat non
-	molestiae quisquam? Nesciunt cupiditate libero voluptatibus odit iste quidem pariatur, nemo veritatis consectetur
-	quod sint delectus beatae tenetur illum architecto, error doloribus officia molestiae natus reiciendis adipisci.
-	Dignissimos amet aut facilis qui minus, praesentium sit mollitia, accusantium est, ratione distinctio voluptas magni
-	reiciendis necessitatibus asperiores quas? Obcaecati eos similique minus totam voluptatem laboriosam exercitationem
-	culpa, aliquam voluptatum fuga consequatur quos id debitis ut delectus explicabo voluptas magnam odio ipsam nemo
-	omnis reiciendis rerum provident ea. Nihil, saepe dignissimos ad unde ea velit accusantium quas reprehenderit dolor
-	minima sequi, ducimus aut officia!</div>
