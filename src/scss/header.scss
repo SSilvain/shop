@@ -207,11 +207,15 @@
 	// .body-header__logo
 
 	&__logo {
-		@extend %ic;
-		@extend ._icon-logo;
+		// @extend %ic;
+		// @extend ._icon-logo;
+		height: 70px;
+		width: 280px;
 		font-size: rem(42);
 		color: $mainDarkColor;
 		padding-right: rem(20);
+		display: flex;
+		align-items: center;
 	}
 
 	// .body-header__search
